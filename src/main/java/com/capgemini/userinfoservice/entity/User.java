@@ -18,15 +18,13 @@ public class User {
 	private long userContactNumber;
 	private String securityQuestion;
 	private String securityAnswer;
-	private List<Integer> userFavourite = new ArrayList<>();
 
 	public User() {
 		super();
-		userFavourite.add(1);
 	}
 
 	public User(String userName, String userFirstName, String userLastName, String userEmail, String userPassword,
-			long userContactNumber, String securityQuestion, String securityAnswer, List<Integer> userFavourite) {
+			long userContactNumber, String securityQuestion, String securityAnswer) {
 		super();
 		this.userName = userName;
 		this.userFirstName = userFirstName;
@@ -36,7 +34,6 @@ public class User {
 		this.userContactNumber = userContactNumber;
 		this.securityQuestion = securityQuestion;
 		this.securityAnswer = securityAnswer;
-		this.userFavourite = userFavourite;
 	}
 
 	public String getUserName() {
@@ -101,14 +98,6 @@ public class User {
 
 	public void setSecurityAnswer(String securityAnswer) {
 		this.securityAnswer = securityAnswer;
-	}
-
-	public List<Integer> getUserFavourite() {
-		return userFavourite;
-	}
-
-	public void setUserFavourite(List<Integer> userFavourite) {
-		this.userFavourite = userFavourite;
 	}
 
 }
